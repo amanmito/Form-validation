@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- bootstarp CDN Link start -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- bootstarp CDN Link end -->
+    <!-- Font Awesome CDN kink Here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome CDN kink Here -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container my-3 py-3">
+       <div class="title-content text-white text-center w-50 m-auto" >
+           <h2>Registration Form</h2>
+       </div>
+
+       <form action="#" class="w-50 m-auto text-white" method="POST" id="login" autocomplete="off" class="bg-light border">
+            <div class="form-group">
+                <label for="Name"> Name</label>
+                <input class="form-control" type="text" placeholder="enter your name" id="name">
+                <div class="name_err_msg" id="name_err"></div>
+            </div>
+            <div class="form-group">
+                <label for="email"> Email </label>
+                <input class="form-control" type="email" placeholder="enter your mail" id="email">
+                <div class="email_err_msg" id="email_err"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="password"> Password </label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" placeholder="Enter Your Password" id="pass" name="passord">
+                           <div class="input-group-append">
+                            <span class="input-group-text" onclick="password_show_hide();" >
+                            <i class="fa fa-eye border-outline-none" id="show_eye"></i>
+                            <i class="fa fa-eye-slash d-none" id="hide_eye"></i>
+                            </span>
+                        </div>
+                    </div>
+                  <div class="pass_err_msg" id="pass_err"></div>
+            </div>
+            
+            
+
+            <div class="form-group">
+                <label for="rpassword">Retype password </label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" placeholder="Re-type Password" id="rpass" name="rpassword">
+                             <div class="input-group-append">
+                                <span class="input-group-text" onclick="rpassword_show_hide();">
+                                <i class="fa fa-eye border-outline" id="rshow_eye"></i>
+                                <i class="fa fa-eye-slash d-none" id="rhide_eye"></i>
+                                </span>
+                            </div>
+                    </div>
+                <div class="rpass_err_msg" id="rpass_err"></div>
+            </div>
+  
+          
+            <div class="form-group text-center">
+                <input type="submit" value="Submit" class="btn btn-dark text-center"  onclick="return sub()">
+                <input type="reset" value="Reset" class="btn btn-dark" >
+            </div>
+        </form>
+     
+   </div>
+    
+     <!-- Bootsratp Js link start here-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <!-- Bootsratp Js link end here-->
+</body>
+</html>
