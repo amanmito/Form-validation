@@ -1,0 +1,58 @@
+
+html{
+    behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background: url(images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+h1 h2 h3 h4 h5 h6{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+form label{
+    color: black;
+    font-weight: 600;
+
+}
+
+.title-content h2{
+    background-color: blueviolet ;
+    padding: 15px;
+   
+}
+
+.name_err_msg{
+    color:red;
+    margin: 2px;
+}
+.email_err_msg{
+    color:red;
+    margin: 2px;
+}
+
+
+.pass_err_msg{
+    color:red;
+    margin: 2px;
+    
+}
+
+.rpass_err_msg{
+    color:red;
+    margin: 2px;
+}
+
+i{
+    color:black
+}
